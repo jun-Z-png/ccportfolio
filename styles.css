@@ -1,0 +1,172 @@
+body {
+    background-image: url('images/bg.png'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-attachment: fixed;
+   }
+   .rubik-pixels-regular {
+    font-family: "Rubik Pixels", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  a{
+    text-decoration: none;
+  
+  }
+  
+   img{
+    z-index:5;
+   }
+h1{
+    font-family: "Rubik Pixels", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color:black
+}
+   #sketch-window {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+  
+    z-index: 1000;
+  
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    justify-content: center;
+  
+
+  }
+.instruction{
+    display:flex;
+    flex-direction: column; 
+    align-items: center;    
+    justify-content: center;
+    height:80vh; 
+}
+  .instruction table th {
+    display: block;
+ 
+    
+  }
+ .aboutpage{
+ 
+    position: absolute;
+  bottom: 0;                 
+  width: 100%;              
+  text-align: right; 
+  right: 50px; 
+ }
+ 
+ 
+ .aboutme {
+  z-index: 100;
+  font-family: "Teko", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  color:black;
+   display:block;
+    flex-direction: row; 
+    text-align: left; 
+    position: absolute; 
+  top: 50%;          
+  left: 50%;          
+  transform: translate(-50%, -50%);
+ 
+ 
+ }
+ .aboutme h2{
+  display: block;
+  margin-block-end: 10px;
+  margin-block-start: 10px;
+ }
+ .fish{
+
+  text-align: center;
+ }
+
+#description{
+  font-family: "Rubik Pixels", system-ui;
+  font-optical-sizing: auto;
+  font-style: normal;
+
+  
+ }
+
+ 
+
+.starfish2{
+	pointer-events: none;
+}
+
+ .starfish2 > * {
+  /* Adjust animation duration to change the element’s speed */
+    animation: fly 50s linear infinite;
+    pointer-events: none !important;
+    top: 0;
+    left: 0;
+    transform: translateX(-120%) translateY(-120%) rotateZ(0);
+    position: fixed;
+    animation-delay: 1s;
+    z-index: 999999;
+  }
+
+ @keyframes fly {
+
+	98.001%, 0% {
+                display: block;
+		transform: translateX(-200%) translateY(100vh) rotateZ(0deg)
+	}
+
+	15% {
+		transform: translateX(100vw) translateY(-100%) rotateZ(180deg)
+	}
+
+	15.001%, 18% {
+		transform: translateX(100vw) translateY(-30%) rotateZ(0deg)
+	}
+
+	40% {
+		transform: translateX(-200%) translateY(3vh) rotateZ(-180deg)
+	}
+
+	40.001%, 43% {
+		transform: translateX(-200%) translateY(-100%) rotateZ(-180deg)
+	}
+
+	65% {
+		transform: translateX(100vw) translateY(50vh) rotateZ(0deg)
+	}
+
+	65.001%, 68% {
+		transform: translateX(20vw) translateY(-200%) rotateZ(180deg)
+	}
+
+	95% {
+		transform: translateX(10vw) translateY(100vh) rotateZ(0deg)
+	}
+}
+
+
+ #seashell:hover{
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+ }
+
+ @keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
